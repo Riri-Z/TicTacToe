@@ -1,13 +1,16 @@
+import styled from 'styled-components';
+
+type ResultProps = {
+    result: string;
+};
+
+const ResultContainer = styled.section `
+  margin: 10px;
+`
 
 
-type ResultProps= {
-  result :string
-}
 const Result = (props: ResultProps) => {
-
-  return (
-    <>{props.result} has won the game</>
-  )
-}
+    return <ResultContainer>{props.result}</ResultContainer>;
+};
 
 export default Result;
